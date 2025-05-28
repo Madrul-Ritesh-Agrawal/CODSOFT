@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1d4ed8;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('Lamborghini_Revuelto-4-removebg-preview.png'); /* replace with uploaded image path if needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fcd34d;
+}
+
+.explore-btn {
+  padding: 12px 28px;
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #1d4ed8;
+}
+
+
+.buy-car-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.filter {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.car-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.car-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.car-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+}
+
+.car-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.car-card:hover .car-image {
+  transform: scale(1.05);
+}
+
+.car-details {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+}
+
+.car-details h3 {
+  font-size: 1.6rem;
+  color: #111;
+  font-weight: 600;
+  margin: 0;
+}
+
+.car-details p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.details-btn {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #0047ff;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #002db3;
+}
+
+.site-footer {
+  background-color: #0a0a0a;
+  color: #ddd;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  color: #bbb;
+  max-width: 300px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+  color: #bbb;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #888;
+}
